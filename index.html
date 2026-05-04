@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omnidata Tech</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="icon" href="assets/img/icon.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="mesh-bg"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#hero"><img src="assets/img/logo.png" alt="Omnidata Tech" style="height: 40px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#enfoque">Enfoque</a></li>
+        <li class="nav-item"><a class="nav-link" href="#producto">Producto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nicho">Nicho</a></li>
+        <li class="nav-item"><a class="nav-link" href="#partnership">Partnership</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sla">SLA</a></li>
+        <li class="nav-item ms-2"><a class="nav-link btn-nav" href="#contacto">Contáctanos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="hero-tag reveal">DATA SOLUTIONS & SERVICES</div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Transformamos<br>
+          datos en <span class="accent">soluciones</span><br>
+          <span class="gold">inteligentes</span>
+        </h1>
+        <p class="hero-desc reveal reveal-delay-2">
+          Somos arquitectos de la transformación digital. Convertimos la complejidad tecnológica en ventaja competitiva mediante automatización, integración de sistemas y CRM empresarial.
+        </p>
+        <div class="d-flex gap-3 flex-wrap reveal reveal-delay-3">
+          <a href="#servicios" class="btn-primary-custom">
+            Ver Servicios <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="#contacto" class="btn-ghost">
+            <i class="bi bi-telephone"></i> Contáctanos
+          </a>
+        </div>
+        <div class="hero-stats reveal reveal-delay-4">
+          <div>
+            <div class="stat-num" data-count="99">0%</div>
+            <div class="stat-label">Disponibilidad</div>
+          </div>
+          <div>
+            <div class="stat-num" data-count="40">0%</div>
+            <div class="stat-label">Menos tareas admin.</div>
+          </div>
+          <div>
+            <div class="stat-num" data-count="15">0</div>
+            <div class="stat-label">Días de implementación</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-orb">
+    <i class="bi bi-heptagon orb-icon"></i>
+  </div>
+</section>
+
+<!-- ENFOQUE -->
+<section id="enfoque">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-tag">Nuestro Enfoque</div>
+      <h2 class="section-title">¿Qué problemas<br>resolvemos?</h2>
+      <p class="section-desc mx-auto">Ayudamos a las organizaciones a superar los obstáculos que frenan su crecimiento digital.</p>
+    </div>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4 reveal reveal-delay-1">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-diagram-3"></i></div>
+          <h5 class="card-title-sm">Fragmentación de Información</h5>
+          <p class="card-text-sm">Unificamos, limpiamos y preparamos información dispersa para una toma de decisiones precisa y confiable.</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-2">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-lightning-charge"></i></div>
+          <h5 class="card-title-sm">Ineficiencia Operativa</h5>
+          <p class="card-text-sm">Sustituimos tareas repetitivas por flujos automáticos de alto impacto que trabajan 24/7 sin errores humanos.</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-3">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-people"></i></div>
+          <h5 class="card-title-sm">Pérdida de Oportunidades</h5>
+          <p class="card-text-sm">Con nuestro CRM garantizamos que ningún prospecto se pierda en el caos administrativo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 reveal reveal-delay-1">
+        <div class="glass-card d-flex gap-4 align-items-start">
+          <div class="card-icon flex-shrink-0"><i class="bi bi-cpu"></i></div>
+          <div>
+            <h5 class="card-title-sm">Motores de Automatización</h5>
+            <p class="card-text-sm">Implementamos lógica de negocio inteligente que trabaja las 24 horas del día, los 7 días de la semana, eliminando errores humanos y reduciendo costos operativos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 reveal reveal-delay-2">
+        <div class="glass-card d-flex gap-4 align-items-start">
+          <div class="card-icon flex-shrink-0"><i class="bi bi-cloud-arrow-up"></i></div>
+          <div>
+            <h5 class="card-title-sm">Software como Estrategia (SaaS)</h5>
+            <p class="card-text-sm">Nuestro CRM está diseñado bajo principios de usabilidad y escalabilidad, permitiendo que la tecnología crezca al mismo ritmo que tu negocio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTO: CRM -->
+<section id="producto">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-tag">Producto Principal</div>
+      <h2 class="section-title">CRM Empresarial</h2>
+      <p class="section-desc mx-auto">Software de gestión de relaciones con clientes diseñado para empresas que buscan escalar.</p>
+    </div>
+    <div class="product-big-card reveal">
+      <div class="product-header">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <div class="badge-crm">Customer Relationship Management</div>
+            <h3 class="section-title mb-2">Software Empresarial CRM</h3>
+            <p class="section-desc">Base de datos centralizada, gestión de contactos, automatización de ventas, reportes en tiempo real e integración con tus herramientas actuales.</p>
+          </div>
+          <div class="col-md-4 text-end">
+            <div style="font-size:6rem; color:rgba(0,200,224,0.15); line-height:1;">
+              <i class="bi bi-bar-chart-steps"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-body">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h6 class="section-tag mb-3" style="font-size:0.68rem;">Características Técnicas</h6>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> Base de datos centralizada de clientes</li>
+              <li><i class="bi bi-check-circle-fill"></i> Gestión de contactos y prospectos</li>
+              <li><i class="bi bi-check-circle-fill"></i> Automatización de ventas (pipeline)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Acceso en la nube o instalación local</li>
+              <li><i class="bi bi-check-circle-fill"></i> Integración con correo electrónico</li>
+              <li><i class="bi bi-check-circle-fill"></i> Reportes y análisis en tiempo real</li>
+              <li><i class="bi bi-check-circle-fill"></i> Seguimiento de interacciones</li>
+              <li><i class="bi bi-check-circle-fill"></i> Seguridad de datos (roles y permisos)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Integración con ERP y marketing</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="section-tag mb-3" style="font-size:0.68rem;">Requisitos</h6>
+            <div class="req-box mb-3">
+              <div class="req-title">Hardware</div>
+              <div class="req-item"><i class="bi bi-circle-fill"></i> Computadora o dispositivo móvil</div>
+              <div class="req-item"><i class="bi bi-circle-fill"></i> Conexión a internet</div>
+            </div>
+            <div class="req-box mb-3">
+              <div class="req-title">Software</div>
+              <div class="req-item"><i class="bi bi-circle-fill"></i> Chrome, Edge o Firefox</div>
+              <div class="req-item"><i class="bi bi-circle-fill"></i> Windows, macOS, Android, iOS</div>
+            </div>
+            <div class="req-box">
+              <div class="req-title">Extras</div>
+              <div class="req-item"><i class="bi bi-circle-fill"></i> Cuenta de usuario</div>
+              <div class="req-item"><i class="bi bi-circle-fill"></i> Capacitación incluida</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h6 class="section-tag mb-3" style="font-size:0.68rem;">Ventajas</h6>
+            <div class="mb-1"><div class="pros-cons-badge badge-pro"><i class="bi bi-check text-success"></i> Mejora la relación con clientes</div></div>
+            <div class="mb-1"><div class="pros-cons-badge badge-pro"><i class="bi bi-check text-success"></i> Centraliza la información</div></div>
+            <div class="mb-1"><div class="pros-cons-badge badge-pro"><i class="bi bi-check text-success"></i> Aumenta la productividad</div></div>
+            <div class="mb-1"><div class="pros-cons-badge badge-pro"><i class="bi bi-check text-success"></i> Automatiza procesos repetitivos</div></div>
+            <div class="mb-1"><div class="pros-cons-badge badge-pro"><i class="bi bi-check text-success"></i> Incrementa las ventas</div></div>
+            <h6 class="section-tag mt-4 mb-3" style="font-size:0.68rem;">Consideraciones</h6>
+            <div class="mb-1"><div class="pros-cons-badge badge-con"><i class="bi bi-exclamation"></i> Requiere capacitación inicial</div></div>
+            <div class="mb-1"><div class="pros-cons-badge badge-con"><i class="bi bi-exclamation"></i> Implementación 10–15 días</div></div>
+            <div class="mb-1"><div class="pros-cons-badge badge-con"><i class="bi bi-exclamation"></i> Depende de conexión a internet</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-tag">Nuestros Servicios</div>
+      <h2 class="section-title">Soluciones a la Medida</h2>
+      <p class="section-desc mx-auto">Tres pilares de servicio diseñados para transformar tu operación de principio a fin.</p>
+    </div>
+    <div class="row g-4 reveal">
+      <!-- Tab Buttons -->
+      <div class="col-lg-4">
+        <div class="d-flex flex-column gap-3">
+          <button class="service-tab-btn active" onclick="showTab('automatizacion', this)">
+            <div class="tab-icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <div>
+              <div class="tab-label">Automatización de Procesos</div>
+              <div class="tab-sub">Eliminamos la carga manual</div>
+            </div>
+          </button>
+          <button class="service-tab-btn" onclick="showTab('integracion', this)">
+            <div class="tab-icon"><i class="bi bi-share"></i></div>
+            <div>
+              <div class="tab-label">Integración de Sistemas</div>
+              <div class="tab-sub">Conectamos tus herramientas</div>
+            </div>
+          </button>
+          <button class="service-tab-btn" onclick="showTab('crm-service', this)">
+            <div class="tab-icon"><i class="bi bi-person-lines-fill"></i></div>
+            <div>
+              <div class="tab-label">Implementación CRM</div>
+              <div class="tab-sub">Gestión de relaciones</div>
+            </div>
+          </button>
+        </div>
+
+        <!-- Specs chips comunes -->
+        <div class="glass-card mt-4">
+          <div class="section-tag mb-2" style="font-size:0.65rem;">Tecnologías</div>
+          <div>
+            <span class="spec-chip">Python</span>
+            <span class="spec-chip">JavaScript</span>
+            <span class="spec-chip">PHP</span>
+            <span class="spec-chip">REST API</span>
+            <span class="spec-chip">Webhooks</span>
+            <span class="spec-chip">MySQL</span>
+            <span class="spec-chip">PostgreSQL</span>
+            <span class="spec-chip">OAuth 2.0</span>
+            <span class="spec-chip">JWT</span>
+            <span class="spec-chip">JSON/XML</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="col-lg-8">
+        <!-- Panel 1 -->
+        <div id="panel-automatizacion" class="service-panel active">
+          <div class="glass-card">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="card-icon"><i class="bi bi-gear-wide-connected"></i></div>
+              <div>
+                <h4 style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;margin:0;">Automatización de Procesos</h4>
+                <p style="color:var(--muted);font-size:0.82rem;margin:0;">Modernización operativa digital</p>
+              </div>
+            </div>
+            <p class="card-text-sm mb-4">Diseñamos sistemas para la modernización operativa, digitalizando flujos de trabajo empresariales y eliminando tareas manuales y repetitivas mediante tecnologías de integración.</p>
+            <div class="divider"></div>
+            <h6 class="section-tag mb-3" style="font-size:0.68rem;">Incluye</h6>
+            <div class="row g-3 mb-4">
+              <div class="col-6">
+                <div class="process-step">
+                  <div class="step-num">01</div>
+                  <div class="step-content">
+                    <h6>Auditoría de Procesos</h6>
+                    <p>Levantamiento y análisis de procesos actuales</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="process-step">
+                  <div class="step-num">02</div>
+                  <div class="step-content">
+                    <h6>Diseño de Solución</h6>
+                    <p>Arquitectura e ingeniería del flujo automatizado</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="process-step">
+                  <div class="step-num">03</div>
+                  <div class="step-content">
+                    <h6>Integración CRM/API</h6>
+                    <p>Conexión de herramientas y plataformas</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="process-step">
+                  <div class="step-num">04</div>
+                  <div class="step-content">
+                    <h6>Pruebas QA y Capacitación</h6>
+                    <p>Control de calidad y entrenamiento del equipo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-2">
+              <div class="col-12"><h6 class="section-tag mb-2" style="font-size:0.68rem;">Beneficios</h6></div>
+              <div class="col-md-6"><div class="pros-cons-badge badge-pro"><i class="bi bi-graph-up-arrow text-success"></i> Eficiencia operativa drástica</div></div>
+              <div class="col-md-6"><div class="pros-cons-badge badge-pro"><i class="bi bi-shield-check text-success"></i> Minimización de errores humanos</div></div>
+              <div class="col-md-6"><div class="pros-cons-badge badge-pro"><i class="bi bi-cash-stack text-success"></i> Reducción de costos operativos</div></div>
+              <div class="col-md-6"><div class="pros-cons-badge badge-pro"><i class="bi bi-arrows-expand text-success"></i> Escalabilidad sin aumentar plantilla</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2 -->
+        <div id="panel-integracion" class="service-panel">
+          <div class="glass-card">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="card-icon"><i class="bi bi-share"></i></div>
+              <div>
+                <h4 style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;margin:0;">Integración de Sistemas</h4>
+                <p style="color:var(--muted);font-size:0.82rem;margin:0;">Un solo ecosistema digital</p>
+              </div>
+            </div>
+            <p class="card-text-sm mb-4">Unificamos y optimizamos las herramientas tecnológicas de tu empresa para que trabajen coordinadas como un solo ecosistema. Los datos fluyen en tiempo real, seguros y estructurados.</p>
+            <div class="divider"></div>
+            <h6 class="section-tag mb-3" style="font-size:0.68rem;">¿Qué incluye?</h6>
+            <div class="row g-3 mb-4">
+              <div class="col-6"><div class="process-step"><div class="step-num"><i class="bi bi-search" style="font-size:0.75rem;"></i></div><div class="step-content"><h6>Análisis de Sistemas</h6><p>Evaluación técnica de plataformas actuales</p></div></div></div>
+              <div class="col-6"><div class="process-step"><div class="step-num"><i class="bi bi-link" style="font-size:0.75rem;"></i></div><div class="step-content"><h6>APIs REST/SOAP</h6><p>Desarrollo de conexiones seguras entre sistemas</p></div></div></div>
+              <div class="col-6"><div class="process-step"><div class="step-num"><i class="bi bi-arrow-repeat" style="font-size:0.75rem;"></i></div><div class="step-content"><h6>Sincronización</h6><p>Tiempo real o batch programado (cron jobs)</p></div></div></div>
+              <div class="col-6"><div class="process-step"><div class="step-num"><i class="bi bi-file-text" style="font-size:0.75rem;"></i></div><div class="step-content"><h6>Documentación Técnica</h6><p>Arquitectura y procesos documentados</p></div></div></div>
+            </div>
+            <h6 class="section-tag mb-2" style="font-size:0.68rem;">Resultados Esperados</h6>
+            <div class="row g-2">
+              <div class="col-md-6"><div class="pros-cons-badge badge-pro"><i class="bi bi-plug text-success"></i> Sistemas completamente conectados</div></div>
+              <div class="col-md-6"><div class="pros-cons-badge badge-pro"><i class="bi bi-flow text-success"></i> Flujo de información automatizado</div></div>
+              <div class="col-md-6"><div class="pros-cons-badge badge-pro"><i class="bi bi-hand-thumbs-up text-success"></i> Reducción de procesos manuales</div></div>
+              <div class="col-md-6"><div class="pros-cons-badge badge-pro"><i class="bi bi-layers text-success"></i> Plataforma tecnológica integrada</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3 -->
+        <div id="panel-crm-service" class="service-panel">
+          <div class="glass-card">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="card-icon"><i class="bi bi-person-lines-fill"></i></div>
+              <div>
+                <h4 style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;margin:0;">Implementación CRM</h4>
+                <p style="color:var(--muted);font-size:0.82rem;margin:0;">Tu cliente en el centro</p>
+              </div>
+            </div>
+            <p class="card-text-sm mb-4">Despliegue técnico completo del software CRM, configuración de flujos de trabajo, integración con bases de datos existentes y capacitación inicial de todo el equipo comercial.</p>
+            <div class="divider"></div>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <div class="req-box">
+                  <div class="req-title">Tiempo estimado</div>
+                  <div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--cyan);">10–15</div>
+                  <div style="font-size:0.8rem;color:var(--muted);">días hábiles</div>
+                  <div style="font-size:0.75rem;color:var(--muted);margin-top:4px;">Diagnóstico + despliegue + pruebas</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="req-box">
+                  <div class="req-title">Solicitantes</div>
+                  <div class="req-item"><i class="bi bi-person-fill"></i> Gerente de Ventas</div>
+                  <div class="req-item"><i class="bi bi-person-fill"></i> Director de Operaciones</div>
+                  <div class="req-item"><i class="bi bi-person-fill"></i> Dueño de Negocio</div>
+                </div>
+              </div>
+            </div>
+            <h6 class="section-tag mb-2" style="font-size:0.68rem;">Consejos para Aprovechar tu CRM</h6>
+            <div class="process-step"><div class="step-num">💡</div><div class="step-content"><h6>Segmenta y Vencerás</h6><p>Usa las etiquetas del CRM para personalizar tu mensaje a cada tipo de cliente.</p></div></div>
+            <div class="process-step"><div class="step-num">🧹</div><div class="step-content"><h6>Limpia tu Base de Datos</h6><p>Realiza auditorías mensuales. La automatización funciona mejor con datos de calidad.</p></div></div>
+            <div class="process-step"><div class="step-num">📊</div><div class="step-content"><h6>Mide el ROI Semanalmente</h6><p>Revisa tus conversiones para ajustar flujos de trabajo de inmediato.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NICHO -->
+<section id="nicho">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 reveal">
+        <div class="section-tag">Nuestro Nicho</div>
+        <h2 class="section-title">Logística de<br>Última Milla</h2>
+        <div class="divider"></div>
+        <p class="section-desc mb-4">Nos especializamos en medianas empresas en crecimiento que han superado el uso de procesos manuales y necesitan escalar con tecnología.</p>
+        <p class="card-text-sm mb-4">Trabajamos con distribuidores, centros logísticos y empresas con flota propia, ayudándoles a profesionalizar su operación mediante la automatización e integración entre ventas y distribución.</p>
+        <a href="#contacto" class="btn-primary-custom" style="width:fit-content;">Habla con nosotros <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="col-lg-7 reveal reveal-delay-2">
+        <div class="nicho-highlight">
+          <div class="row g-4">
+            <div class="col-6 position-relative">
+              <div class="nicho-num">01</div>
+              <div class="card-icon"><i class="bi bi-truck"></i></div>
+              <h6 class="card-title-sm mt-2">Distribuidores</h6>
+              <p class="card-text-sm">Conectamos ventas y distribución en un solo flujo.</p>
+            </div>
+            <div class="col-6 position-relative">
+              <div class="nicho-num">02</div>
+              <div class="card-icon"><i class="bi bi-building"></i></div>
+              <h6 class="card-title-sm mt-2">Centros Logísticos</h6>
+              <p class="card-text-sm">Automatizamos el tracking y gestión de inventario.</p>
+            </div>
+            <div class="col-6 position-relative">
+              <div class="nicho-num">03</div>
+              <div class="card-icon"><i class="bi bi-map"></i></div>
+              <h6 class="card-title-sm mt-2">Empresas con Flota</h6>
+              <p class="card-text-sm">Visibilidad en tiempo real de cada ruta y entrega.</p>
+            </div>
+            <div class="col-6 position-relative">
+              <div class="nicho-num">04</div>
+              <div class="card-icon"><i class="bi bi-graph-up"></i></div>
+              <h6 class="card-title-sm mt-2">Empresas en Crecimiento</h6>
+              <p class="card-text-sm">Escalamos tu operación sin perder agilidad.</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card mt-4">
+          <p style="font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;line-height:1.5;color:var(--white);">
+            "Al elegirnos, no solo obtienes tecnología, <span style="color:var(--cyan);">ganas un socio</span> que te ayuda a responder más rápido y a operar mejor en el día a día."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERSHIP -->
+<section id="partnership">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-tag">Partnership</div>
+      <h2 class="section-title">Omnidata Tech + EVOR</h2>
+      <p class="section-desc mx-auto">En alianza estratégica con EVOR (Equipo 7), potenciamos soluciones con el ecosistema Microsoft 365.</p>
+    </div>
+    <div class="row g-4 reveal">
+      <div class="col-md-4">
+        <div class="partner-card text-center">
+          <div class="card-icon mx-auto" style="width:64px;height:64px;font-size:1.8rem;margin-bottom:1.2rem;"><i class="bi bi-microsoft"></i></div>
+          <h5 class="card-title-sm">Microsoft Power Automate</h5>
+          <p class="card-text-sm">Automatización de procesos y tareas repetitivas dentro del ecosistema Microsoft.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="partner-card" style="border-color:rgba(232,160,32,0.3);">
+          <div class="partner-badge"><i class="bi bi-stars"></i> Alianza Estratégica</div>
+          <h5 class="card-title-sm mb-3">Combinamos lo mejor de dos mundos</h5>
+          <div class="row g-2">
+            <div class="col-6">
+              <div style="background:rgba(0,200,224,0.05);border:1px solid var(--border);border-radius:10px;padding:1rem;">
+                <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:0.85rem;color:var(--cyan);margin-bottom:0.5rem;">EVOR</div>
+                <p style="font-size:0.78rem;color:var(--muted);margin:0;">Infraestructura en la nube y Microsoft 365</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div style="background:rgba(232,160,32,0.05);border:1px solid rgba(232,160,32,0.2);border-radius:10px;padding:1rem;">
+                <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:0.85rem;color:var(--gold);margin-bottom:0.5rem;">Omnidata</div>
+                <p style="font-size:0.78rem;color:var(--muted);margin:0;">Automatización e integración de sistemas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="partner-card text-center">
+          <div class="card-icon mx-auto" style="width:64px;height:64px;font-size:1.8rem;margin-bottom:1.2rem;"><i class="bi bi-diagram-2"></i></div>
+          <h5 class="card-title-sm">Microsoft Dynamics 365</h5>
+          <p class="card-text-sm">Integración avanzada con CRM para gestión y seguimiento de clientes en la nube.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLA -->
+<section id="sla">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-tag">Acuerdo de Nivel de Servicio</div>
+      <h2 class="section-title">SLA – Nuestro Compromiso</h2>
+      <p class="section-desc mx-auto">Transparencia total sobre los niveles de disponibilidad, tiempos de respuesta y soporte que garantizamos.</p>
+    </div>
+    <div class="row g-4 reveal">
+      <div class="col-lg-4 text-center">
+        <div class="glass-card h-100 d-flex flex-column align-items-center justify-content-center">
+          <div class="availability-ring mb-3">
+            <svg width="160" height="160" viewBox="0 0 160 160">
+              <circle cx="80" cy="80" r="68" fill="none" stroke="rgba(0,200,224,0.1)" stroke-width="10"/>
+              <circle cx="80" cy="80" r="68" fill="none" stroke="var(--cyan)" stroke-width="10"
+                stroke-dasharray="427" stroke-dashoffset="4.27"
+                stroke-linecap="round" style="filter:drop-shadow(0 0 8px rgba(0,200,224,0.6));"/>
+            </svg>
+            <div class="ring-label">
+              <div class="ring-pct">99%</div>
+              <div class="ring-sub">Uptime</div>
+            </div>
+          </div>
+          <h5 class="card-title-sm">Disponibilidad Garantizada</h5>
+          <p class="card-text-sm">Sistema disponible el 99% del tiempo con monitoreo continuo.</p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="glass-card h-100">
+          <div class="sla-row">
+            <div class="sla-key"><i class="bi bi-clock me-2" style="color:var(--cyan);"></i>Horario</div>
+            <div class="sla-val"><strong>Lunes a Viernes</strong>, 9:00 AM – 5:00 PM</div>
+          </div>
+          <div class="sla-row">
+            <div class="sla-key"><i class="bi bi-send me-2" style="color:var(--cyan);"></i>Tiempo de Resp.</div>
+            <div class="sla-val">
+              Solicitudes generales: <strong>24 hrs</strong><br>
+              Incidentes técnicos: <strong>12 hrs</strong><br>
+              Críticos: <strong>4 hrs</strong>
+            </div>
+          </div>
+          <div class="sla-row">
+            <div class="sla-key"><i class="bi bi-tools me-2" style="color:var(--cyan);"></i>Tiempo de Soluc.</div>
+            <div class="sla-val">
+              Menores: <strong>24–48 hrs</strong> · Moderados: <strong>48–72 hrs</strong> · Críticos: <strong>máx. 72 hrs</strong>
+            </div>
+          </div>
+          <div class="sla-row">
+            <div class="sla-key"><i class="bi bi-headset me-2" style="color:var(--cyan);"></i>Soporte</div>
+            <div class="sla-val">Correo electrónico · Atención remota · <strong>Seguimiento continuo</strong></div>
+          </div>
+          <div class="sla-row">
+            <div class="sla-key"><i class="bi bi-person-check me-2" style="color:var(--cyan);"></i>Resp. Cliente</div>
+            <div class="sla-val">Proporcionar información · Reportar incidencias · Tener acceso a internet</div>
+          </div>
+          <div class="sla-row">
+            <div class="sla-key"><i class="bi bi-x-circle me-2" style="color:var(--cyan);"></i>Exclusiones</div>
+            <div class="sla-val">Fallas de APIs de terceros · Problemas de conexión del cliente · Uso indebido</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 reveal">
+        <div class="section-tag">Contacto</div>
+        <h2 class="section-title">¿Listo para<br>transformar tu<br>operación?</h2>
+        <div class="divider"></div>
+        <p class="section-desc">Agenda una sesión de diagnóstico gratuita. Analizamos tu operación y te decimos exactamente qué automatizar primero.</p>
+        <div class="mt-4 glass-card" style="padding:1.5rem;">
+          <div style="font-size:0.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;font-weight:600;margin-bottom:0.5rem;">Tiempo de implementación</div>
+          <div style="font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;color:var(--cyan);line-height:1;">10–15</div>
+          <div style="font-size:0.85rem;color:var(--muted);">días hábiles hasta tener tu sistema activo</div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal reveal-delay-2">
+        <div class="contact-card">
+          <h5 class="card-title-sm mb-4">Información de Contacto</h5>
+          <a class="contact-item" href="tel:8186919334">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <div class="contact-label">Teléfono</div>
+              <div class="contact-value">818 691 9334</div>
+            </div>
+          </a>
+          <a class="contact-item" href="mailto:contacto@omnidatatech.com">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="contact-label">Correo Electrónico</div>
+              <div class="contact-value">contacto@omnidatatech.com</div>
+            </div>
+          </a>
+          <div class="contact-item" style="cursor:default;">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="contact-label">Ubicación</div>
+              <div class="contact-value">Monterrey, Nuevo León, México</div>
+            </div>
+          </div>
+          <a class="contact-item" href="https://www.omnidatatech.com" target="_blank" rel="noopener">
+            <div class="contact-icon"><i class="bi bi-globe2"></i></div>
+            <div>
+              <div class="contact-label">Sitio Web</div>
+              <div class="contact-value">www.omnidatatech.com</div>
+            </div>
+          </a>
+          <div class="mt-4 pt-3" style="border-top:1px solid var(--border);">
+            <a href="mailto:contacto@omnidatatech.com" class="btn-primary-custom w-100 justify-content-center">
+              <i class="bi bi-send-fill"></i> Enviar Mensaje
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <div class="footer-logo">Omnidata<span>Tech</span></div>
+        <div style="font-size:0.78rem;color:var(--muted);margin-top:4px;">Data Solutions & Services</div>
+      </div>
+      <div class="col-md-4 text-center py-3 py-md-0">
+        <div style="font-size:0.78rem;color:var(--muted);">© 2024 Omnidata Tech · Grupo 63 · Equipo Chispi</div>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <div style="font-size:0.78rem;color:var(--muted);">Monterrey, NL · contacto@omnidatatech.com</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="functions.js"></script>
+</body>
+</html>
