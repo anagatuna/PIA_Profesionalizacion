@@ -32,7 +32,9 @@
         <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
         <li class="nav-item"><a class="nav-link" href="#nicho">Nicho</a></li>
         <li class="nav-item"><a class="nav-link" href="#partnership">Partnership</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resenas">Reseñas</a></li>
         <li class="nav-item"><a class="nav-link" href="#sla">SLA</a></li>
+        <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
         <li class="nav-item ms-2"><a class="nav-link btn-nav" href="#contacto">Contáctanos</a></li>
       </ul>
     </div>
@@ -450,49 +452,296 @@
   </div>
 </section>
 
-<!-- PARTNERSHIP -->
 <section id="partnership">
   <div class="container">
+ 
+    <!-- Header -->
     <div class="text-center mb-5 reveal">
       <div class="section-tag">Partnership</div>
-      <h2 class="section-title">Omnidata Tech + EVOR</h2>
-      <p class="section-desc mx-auto">En alianza estratégica con EVOR (Equipo 7), potenciamos soluciones con el ecosistema Microsoft 365.</p>
+      <h2 class="section-title">Una alianza que<br>multiplica resultados</h2>
+      <p class="section-desc mx-auto">Unimos fuerzas con EVOR para ofrecerte soluciones completas, desde la infraestructura en la nube hasta la automatización inteligente de tus procesos.</p>
     </div>
-    <div class="row g-4 reveal">
-      <div class="col-md-4">
-        <div class="partner-card text-center">
-          <div class="card-icon mx-auto" style="width:64px;height:64px;font-size:1.8rem;margin-bottom:1.2rem;"><i class="bi bi-microsoft"></i></div>
-          <h5 class="card-title-sm">Microsoft Power Automate</h5>
-          <p class="card-text-sm">Automatización de procesos y tareas repetitivas dentro del ecosistema Microsoft.</p>
+ 
+    <!-- HERO DE LOGOS -->
+    <div class="partner-hero reveal reveal-delay-1">
+      <!-- Omnidata -->
+      <div class="partner-hero-brand partner-hero-brand--omnidata">
+        <div class="phb-glow phb-glow--cyan"></div>
+        <div class="phb-inner">
+          <img src="assets/img/logo-blanco.png"
+               alt="Omnidata Tech"
+               class="phb-logo phb-logo--wide">
+          <div class="phb-label">Automatización & CRM</div>
+          <div class="phb-chips">
+            <span class="phb-chip">Integración de Sistemas</span>
+            <span class="phb-chip">RPA</span>
+            <span class="phb-chip">CRM</span>
+          </div>
         </div>
       </div>
+ 
+      <!-- Conector central -->
+      <div class="partner-hero-connector">
+        <div class="phc-line phc-line--top"></div>
+        <div class="phc-badge">
+          <i class="bi bi-stars"></i>
+          <span>Alianza</span>
+        </div>
+        <div class="phc-pulse"></div>
+        <div class="phc-line phc-line--bottom"></div>
+      </div>
+ 
+      <!-- EVOR -->
+      <div class="partner-hero-brand partner-hero-brand--evor">
+        <div class="phb-glow phb-glow--white"></div>
+        <div class="phb-inner">
+          <!--
+            El logo EVOR tiene fondo negro; lo mostramos con mix-blend-mode
+            para que se integre naturalmente con el fondo oscuro.
+          -->
+          <img src="assets/img/evor-logo.png"
+               alt="EVOR"
+               class="phb-logo phb-logo--evor">
+          <div class="phb-label">Infraestructura & Cloud</div>
+          <div class="phb-chips">
+            <span class="phb-chip phb-chip--white">Microsoft 365</span>
+            <span class="phb-chip phb-chip--white">Power Automate</span>
+            <span class="phb-chip phb-chip--white">Azure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /HERO DE LOGOS -->
+ 
+    <!-- Aportaciones -->
+    <div class="row g-4 mt-2 reveal reveal-delay-2">
+ 
+      <!-- Card Omnidata aporta -->
       <div class="col-md-4">
-        <div class="partner-card" style="border-color:rgba(232,160,32,0.3);">
+        <div class="partner-card partner-card--cyan">
+          <div class="partner-card-logo-wrap">
+            <img src="assets/img/icon.png" alt="Omnidata Tech" class="partner-card-logo-img">
+          </div>
+          <h5 class="card-title-sm mb-3">Omnidata Tech aporta</h5>
+          <ul class="partner-list">
+            <li><i class="bi bi-check-circle-fill"></i> Diseño de procesos automatizados</li>
+            <li><i class="bi bi-check-circle-fill"></i> Optimización de flujos de trabajo</li>
+            <li><i class="bi bi-check-circle-fill"></i> Integración con CRM existente</li>
+            <li><i class="bi bi-check-circle-fill"></i> Desarrollo de APIs y conectores</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Card central: tecnologías -->
+      <div class="col-md-4">
+        <div class="partner-card partner-card--gold text-center">
           <div class="partner-badge"><i class="bi bi-stars"></i> Alianza Estratégica</div>
-          <h5 class="card-title-sm mb-3">Combinamos lo mejor de dos mundos</h5>
-          <div class="row g-2">
-            <div class="col-6">
-              <div style="background:rgba(0,200,224,0.05);border:1px solid var(--border);border-radius:10px;padding:1rem;">
-                <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:0.85rem;color:var(--cyan);margin-bottom:0.5rem;">EVOR</div>
-                <p style="font-size:0.78rem;color:var(--muted);margin:0;">Infraestructura en la nube y Microsoft 365</p>
-              </div>
+          <p class="card-text-sm mb-4">Combinamos infraestructura de clase mundial con automatización inteligente para darte una solución completa y escalable.</p>
+          <div class="partner-tech-grid">
+            <div class="ptg-item">
+              <i class="bi bi-microsoft"></i>
+              <span>Power Automate</span>
             </div>
-            <div class="col-6">
-              <div style="background:rgba(232,160,32,0.05);border:1px solid rgba(232,160,32,0.2);border-radius:10px;padding:1rem;">
-                <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:0.85rem;color:var(--gold);margin-bottom:0.5rem;">Omnidata</div>
-                <p style="font-size:0.78rem;color:var(--muted);margin:0;">Automatización e integración de sistemas</p>
-              </div>
+            <div class="ptg-item">
+              <i class="bi bi-cloud-fill"></i>
+              <span>Microsoft 365</span>
+            </div>
+            <div class="ptg-item">
+              <i class="bi bi-diagram-2-fill"></i>
+              <span>Dynamics 365</span>
+            </div>
+            <div class="ptg-item">
+              <i class="bi bi-gear-wide-connected"></i>
+              <span>Automatización</span>
             </div>
           </div>
         </div>
       </div>
+ 
+      <!-- Card EVOR aporta -->
       <div class="col-md-4">
-        <div class="partner-card text-center">
-          <div class="card-icon mx-auto" style="width:64px;height:64px;font-size:1.8rem;margin-bottom:1.2rem;"><i class="bi bi-diagram-2"></i></div>
-          <h5 class="card-title-sm">Microsoft Dynamics 365</h5>
-          <p class="card-text-sm">Integración avanzada con CRM para gestión y seguimiento de clientes en la nube.</p>
+        <div class="partner-card partner-card--white">
+          <div class="partner-card-logo-wrap">
+            <!-- Logo EVOR con fondo negro: usamos filter para integrarlo -->
+            <img src="assets/img/evor-logo.png" alt="EVOR" class="partner-card-logo-img partner-card-logo-img--evor">
+          </div>
+          <h5 class="card-title-sm mb-3">EVOR aporta</h5>
+          <ul class="partner-list partner-list--white">
+            <li><i class="bi bi-check-circle-fill"></i> Implementación de entorno en la nube</li>
+            <li><i class="bi bi-check-circle-fill"></i> Configuración de Microsoft 365</li>
+            <li><i class="bi bi-check-circle-fill"></i> Administración de servicios cloud</li>
+            <li><i class="bi bi-check-circle-fill"></i> Soporte de infraestructura</li>
+          </ul>
         </div>
       </div>
+ 
+    </div><!-- /row aportaciones -->
+ 
+  </div>
+</section>
+
+<!-- Reseñas -->
+<section id="resenas">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-tag">Testimonios</div>
+      <h2 class="section-title">Lo que dicen<br>nuestros clientes</h2>
+      <p class="section-desc mx-auto">Empresas que ya transformaron su operación con Omnidata Tech.</p>
+    </div>
+ 
+    <!-- Estrellas promedio -->
+    <div class="text-center mb-5 reveal reveal-delay-1">
+      <div class="rating-summary">
+        <div class="rating-score">4.9</div>
+        <div>
+          <div class="rating-stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <div class="rating-label">Basado en 38 reseñas verificadas</div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Carrusel de reseñas -->
+    <div class="reviews-track-wrapper reveal reveal-delay-2">
+      <div class="reviews-track" id="reviewsTrack">
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #00c8e0, #005f70);">MR</div>
+            <div>
+              <div class="review-name">Miguel Rodríguez</div>
+              <div class="review-role">Director de Operaciones · Logística Noreste</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="review-text">"Automatizamos todo el flujo de pedidos en menos de dos semanas. Lo que antes tomaba 3 horas al día ahora sucede solo. El equipo de Omnidata entendió nuestro negocio desde el primer día."</p>
+          <div class="review-footer">
+            <span class="review-tag"><i class="bi bi-gear"></i> Automatización</span>
+            <span class="review-date">Marzo 2026</span>
+          </div>
+        </div>
+ 
+        <div class="review-card review-card--featured">
+          <div class="review-featured-badge"><i class="bi bi-patch-check-fill"></i> Reseña destacada</div>
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #e8a020, #7a5200);">AL</div>
+            <div>
+              <div class="review-name">Ana Lira</div>
+              <div class="review-role">Gerente Comercial · Distribuidora MexPack</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="review-text">"El CRM cambió completamente cómo gestionamos a nuestros clientes. Pasamos de perder prospectos en Excel a tener visibilidad total del pipeline. Las ventas subieron un 28% en el primer trimestre."</p>
+          <div class="review-footer">
+            <span class="review-tag"><i class="bi bi-person-lines-fill"></i> CRM</span>
+            <span class="review-date">Enero 2026</span>
+          </div>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #7c3aed, #2d1060);">JF</div>
+            <div>
+              <div class="review-name">Jorge Fuentes</div>
+              <div class="review-role">CEO · Flota Express MTY</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="review-text">"La integración entre nuestro sistema de rutas y el ERP contable fue impecable. Antes teníamos que capturar todo a mano dos veces. Ahora los datos fluyen solos y los reportes son en tiempo real."</p>
+          <div class="review-footer">
+            <span class="review-tag"><i class="bi bi-share"></i> Integración</span>
+            <span class="review-date">Febrero 2026</span>
+          </div>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #059669, #014029);">CM</div>
+            <div>
+              <div class="review-name">Carolina Méndez</div>
+              <div class="review-role">Dir. Tecnología · Grupo Almacenes Del Norte</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+          <p class="review-text">"Excelente soporte post-implementación. Respondieron un incidente crítico en menos de 4 horas como prometieron en el SLA. No es común encontrar proveedores que cumplan lo que firman."</p>
+          <div class="review-footer">
+            <span class="review-tag"><i class="bi bi-headset"></i> Soporte</span>
+            <span class="review-date">Abril 2026</span>
+          </div>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #dc2626, #5a0a0a);">RP</div>
+            <div>
+              <div class="review-name">Roberto Peña</div>
+              <div class="review-role">Dueño · Peña Distribuciones</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="review-text">"Pensé que implementar un CRM iba a ser un dolor de cabeza. El equipo de Omnidata lo hizo increíblemente sencillo, nos capacitaron muy bien y en 12 días ya estábamos operando al 100%."</p>
+          <div class="review-footer">
+            <span class="review-tag"><i class="bi bi-person-lines-fill"></i> CRM</span>
+            <span class="review-date">Mayo 2026</span>
+          </div>
+        </div>
+ 
+        <!-- Duplicados para scroll infinito -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #00c8e0, #005f70);">MR</div>
+            <div>
+              <div class="review-name">Miguel Rodríguez</div>
+              <div class="review-role">Director de Operaciones · Logística Noreste</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="review-text">"Automatizamos todo el flujo de pedidos en menos de dos semanas. Lo que antes tomaba 3 horas al día ahora sucede solo. El equipo de Omnidata entendió nuestro negocio desde el primer día."</p>
+          <div class="review-footer">
+            <span class="review-tag"><i class="bi bi-gear"></i> Automatización</span>
+            <span class="review-date">Marzo 2026</span>
+          </div>
+        </div>
+        <div class="review-card review-card--featured">
+          <div class="review-featured-badge"><i class="bi bi-patch-check-fill"></i> Reseña destacada</div>
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #e8a020, #7a5200);">AL</div>
+            <div>
+              <div class="review-name">Ana Lira</div>
+              <div class="review-role">Gerente Comercial · Distribuidora MexPack</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="review-text">"El CRM cambió completamente cómo gestionamos a nuestros clientes. Pasamos de perder prospectos en Excel a tener visibilidad total del pipeline. Las ventas subieron un 28% en el primer trimestre."</p>
+          <div class="review-footer">
+            <span class="review-tag"><i class="bi bi-person-lines-fill"></i> CRM</span>
+            <span class="review-date">Enero 2026</span>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+ 
+    <!-- Controles del carrusel -->
+    <div class="reviews-controls reveal reveal-delay-3">
+      <button class="review-ctrl-btn" id="reviewPrev" aria-label="Anterior">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+      <div class="review-dots" id="reviewDots">
+        <span class="rdot active"></span>
+        <span class="rdot"></span>
+        <span class="rdot"></span>
+        <span class="rdot"></span>
+        <span class="rdot"></span>
+      </div>
+      <button class="review-ctrl-btn" id="reviewNext" aria-label="Siguiente">
+        <i class="bi bi-arrow-right"></i>
+      </button>
     </div>
   </div>
 </section>
@@ -559,6 +808,202 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!--Equipo -->
+<section id="equipo">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-tag">Nuestro Equipo</div>
+      <h2 class="section-title">Las personas<br>detrás de <span style="color:var(--cyan);">Omnidata</span></h2>
+      <p class="section-desc mx-auto">Un equipo multidisciplinario apasionado por convertir datos en soluciones reales para tu negocio.</p>
+    </div>
+ 
+    <div class="row g-4 justify-content-center">
+ 
+      <!-- Miembro 1 -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <!--
+              INSTRUCCIÓN: reemplaza el src con la ruta de la foto real.
+              Ejemplo: src="assets/img/equipo/roberto.jpg"
+              La imagen debe ser cuadrada o 3:4, mínimo 400×400 px.
+            -->
+            <img src="assets/img/equipo/roberto.jpg"
+                 alt="Roberto Almaguer Garza"
+                 class="team-photo"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="team-photo-placeholder" style="display:none;">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="team-overlay">
+              <span class="team-id">#1862977</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <h6 class="team-name">Roberto Almaguer Garza</h6>
+            <span class="team-role">Desarrollo & Arquitectura</span>
+            <p class="team-bio">Especialista en diseño de sistemas y soluciones de backend escalables.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Miembro 2 -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/img/equipo/aldo.jpg"
+                 alt="Aldo Patricio Balderrama Del Ángel"
+                 class="team-photo"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="team-photo-placeholder" style="display:none;">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="team-overlay">
+              <span class="team-id">#2179971</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <h6 class="team-name">Aldo Patricio Balderrama</h6>
+            <span class="team-role">Integración de Sistemas</span>
+            <p class="team-bio">Experto en APIs, microservicios y conexión de plataformas empresariales.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Miembro 3 -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/img/equipo/roman.jpg"
+                 alt="Román Osvaldo García Hernández"
+                 class="team-photo"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="team-photo-placeholder" style="display:none;">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="team-overlay">
+              <span class="team-id">#1860130</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <h6 class="team-name">Román Osvaldo García</h6>
+            <span class="team-role">Automatización & RPA</span>
+            <p class="team-bio">Diseña flujos automáticos e implementa bots para procesos críticos.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Miembro 4 -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-4">
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/img/equipo/fernando.jpg"
+                 alt="Fernando Nicolás Molina Ramírez"
+                 class="team-photo"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="team-photo-placeholder" style="display:none;">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="team-overlay">
+              <span class="team-id">#2015797</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <h6 class="team-name">Fernando Nicolás Molina</h6>
+            <span class="team-role">Análisis de Datos</span>
+            <p class="team-bio">Transforma datos crudos en reportes y dashboards accionables.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Miembro 5 -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/img/equipo/alejandro.jpg"
+                 alt="Jesús Alejandro Ramírez Escobedo"
+                 class="team-photo"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="team-photo-placeholder" style="display:none;">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="team-overlay">
+              <span class="team-id">#1945297</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <h6 class="team-name">Jesús Alejandro Ramírez</h6>
+            <span class="team-role">CRM & Gestión de Clientes</span>
+            <p class="team-bio">Implementa y optimiza sistemas CRM para equipos de ventas.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Miembro 6 -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/img/equipo/ana.jpg"
+                 alt="Ana Lucia Treviño Correa"
+                 class="team-photo"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="team-photo-placeholder" style="display:none;">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="team-overlay">
+              <span class="team-id">#2115134</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <h6 class="team-name">Ana Lucía Treviño Correa</h6>
+            <span class="team-role">UX & Diseño de Producto</span>
+            <p class="team-bio">Asegura que cada solución sea intuitiva y centrada en el usuario.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Miembro 7 -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/img/equipo/luca.jpg"
+                 alt="Luca Ramón Treviño Suarez"
+                 class="team-photo"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="team-photo-placeholder" style="display:none;">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="team-overlay">
+              <span class="team-id">#1997706</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <h6 class="team-name">Luca Ramón Treviño Suarez</h6>
+            <span class="team-role">Infraestructura & Cloud</span>
+            <p class="team-bio">Gestiona la infraestructura en la nube y la seguridad de los sistemas.</p>
+          </div>
+        </div>
+      </div>
+ 
+    </div><!-- /row -->
+ 
+    <!-- Banner grupo -->
+    <div class="team-banner reveal mt-5">
+      <div class="d-flex align-items-center gap-4 flex-wrap justify-content-center text-center text-md-start">
+        <div class="team-banner-icon"><i class="bi bi-mortarboard-fill"></i></div>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;">Grupo 63 · Equipo Chispi</div>
+          <div style="font-size:0.85rem;color:var(--muted);">7 integrantes · Monterrey, Nuevo León · Omnidata Tech</div>
+        </div>
+        <div class="ms-md-auto">
+          <a href="#contacto" class="btn-primary-custom">Trabaja con nosotros <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+ 
   </div>
 </section>
 

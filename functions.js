@@ -82,3 +82,81 @@ window.addEventListener('scroll', () => {
   document.querySelector('.navbar').style.background =
     window.scrollY > 50 ? 'rgba(10,20,32,0.97)' : 'rgba(13,27,42,0.85)';
 });
+
+// CARRUSEL DE RESEÑAS 
+(function () {
+  const track      = document.getElementById('reviewsTrack');
+  const prevBtn    = document.getElementById('reviewPrev');
+  const nextBtn    = document.getElementById('reviewNext');
+  const dotsEl     = document.getElementById('reviewDots');
+
+  if (!track || !prevBtn || !nextBtn) return;
+
+  const CARD_TOTAL = 5;          // tarjetas reales (sin duplicados)
+  const GAP        = 24;         // gap en px (1.5rem)
+  let   current    = 0;
+  let   autoTimer  = null;
+  let   cardWidth  = 0;
+
+  // Calcula el ancho de una card en tiempo real
+  function getCardWidth() {
+    const card = track.querySelector('.review-card');
+    return card ? card.offsetWidth + GAP : 364;
+  }
+
+  // Cuántas cards caben en pantalla
+  function visibleCount() {
+    const wrapper = track.parentElement;
+    return Math.max(1, Math.floor(wrapper.offsetWidth / getCardWidth()));
+  }
+
+  function goTo(index) {
+    cardWidth = getCardWidth();
+    current   = Math.max(0, Math.min(index, CARD_TOTAL - 1));
+    track.style.transform = `translateX(-${current * cardWidth}px)`;
+
+    // Dots
+    const dots = dotsEl.querySelectorAll('.rdot');
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  function next() { goTo(current < CARD_TOTAL - 1 ? current + 1 : 0); }
+  function prev() { goTo(current > 0 ? current - 1 : CARD_TOTAL - 1); }
+
+  nextBtn.addEventListener('click', () => { next(); resetAuto(); });
+  prevBtn.addEventListener('click', () => { prev(); resetAuto(); });
+
+  // Dots click
+  dotsEl.querySelectorAll('.rdot').forEach((dot, i) => {
+    dot.addEventListener('click', () => { goTo(i); resetAuto(); });
+  });
+
+  // Auto-play
+  function startAuto() { autoTimer = setInterval(next, 5000); }
+  function resetAuto()  { clearInterval(autoTimer); startAuto(); }
+
+  // Pausa al hacer hover
+  track.parentElement.addEventListener('mouseenter', () => clearInterval(autoTimer));
+  track.parentElement.addEventListener('mouseleave', startAuto);
+
+  // Swipe táctil
+  let touchStartX = 0;
+  track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); resetAuto(); }
+  }, { passive: true });
+
+  // Teclado
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') { prev(); resetAuto(); }
+    if (e.key === 'ArrowRight') { next(); resetAuto(); }
+  });
+
+  // Recalcular al cambiar tamaño de ventana
+  window.addEventListener('resize', () => { goTo(current); });
+
+  // Init
+  goTo(0);
+  startAuto();
+})();
