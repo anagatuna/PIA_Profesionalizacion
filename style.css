@@ -1327,13 +1327,13 @@ section {
     .svc-bottom { padding: 1.5rem; }
 }
 
-/* ── PLANES ────────────────────────────────────────────────── */
-#planes {
+/* ── PRECIOS ────────────────────────────────────────────────── */
+#precios {
     position: relative;
     padding-bottom: 5rem;
 }
 
-/* Cards de planes */
+/* Cards de precios */
 .plan-card {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -1488,7 +1488,7 @@ section {
     color: var(--cyan);
 }
 
-/* ── RESPONSIVE PLANES ─────────────────────────────────────── */
+/* ── RESPONSIVE PRECIO ─────────────────────────────────────── */
 @media (max-width: 991px) {
     .plan-card--featured {
         padding: 2.5rem 2rem;
@@ -2842,4 +2842,151 @@ footer {
     color: var(--muted);
     line-height: 1.6;
     margin-bottom: 2rem;
+}
+
+/* =========================
+   PLANES COMPACTOS (POWER AUTOMATE)
+========================= */
+.p-card {
+    background: rgba(15, 23, 36, 0.6); /* Fondo un poco más oscuro que los servicios */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 1.8rem 1.5rem; /* Menos padding que los servicios */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.p-card:hover {
+    transform: translateY(-5px);
+    border-top-color: var(--cyan);
+    box-shadow: 0 15px 35px rgba(0, 200, 224, 0.08);
+    background: rgba(15, 23, 36, 0.8);
+}
+
+.p-card--featured {
+    border-top: 4px solid var(--gold);
+    background: linear-gradient(180deg, rgba(232,160,32,0.05) 0%, rgba(15, 23, 36, 0.6) 100%);
+}
+
+.p-card--featured:hover {
+    border-top-color: var(--gold);
+    box-shadow: 0 15px 35px rgba(232, 160, 32, 0.1);
+}
+
+/* Etiqueta flotante para el más popular */
+.p-badge {
+    position: absolute;
+    top: -12px;
+    right: 1.5rem;
+    background: var(--gold);
+    color: #0e1c2e;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    box-shadow: 0 4px 10px rgba(232, 160, 32, 0.3);
+}
+
+.p-card-header {
+    margin-bottom: 1.2rem;
+}
+
+.p-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.p-desc {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.4;
+    margin: 0;
+    min-height: 36px; /* Para alinear las tarjetas aunque el texto varíe */
+}
+
+.p-price-block {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.p-currency {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-right: 0.2rem;
+}
+
+.p-price {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.5rem; /* Más pequeño que los 3.5rem anteriores */
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+}
+
+.p-period {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-left: 0.4rem;
+}
+
+.p-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.p-feat {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: #e2e8f0;
+    line-height: 1.3;
+}
+
+.p-feat i {
+    color: var(--cyan);
+    font-size: 0.9rem;
+    margin-top: 1px;
+}
+
+.p-feat.text-muted i {
+    color: var(--muted);
+}
+
+.btn-p-custom {
+    background: var(--gold);
+    color: var(--navy);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.85rem 2rem;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s;
+    letter-spacing: 0.02em;
+}
+
+.btn-p-custom:hover {
+    background: var(--gold);
+    color: var(--navy);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(232, 160, 32, 0.35);
 }
