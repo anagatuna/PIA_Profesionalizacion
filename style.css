@@ -2990,3 +2990,97 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 12px 35px rgba(232, 160, 32, 0.35);
 }
+
+.p-min-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 6px;
+  padding: 0.3rem 0.75rem;
+  margin-bottom: 1.2rem;
+}
+ 
+.p-min-note--gold {
+  color: var(--gold);
+  background: rgba(232,160,32,0.07);
+  border-color: rgba(232,160,32,0.18);
+}
+ 
+.p-min-note--cyan {
+  color: var(--cyan);
+  background: rgba(0,200,224,0.07);
+  border-color: rgba(0,200,224,0.18);
+}
+ 
+/* Feature desactivado */
+.p-feat--muted {
+  opacity: 0.4;
+}
+.p-feat--muted i {
+  color: var(--muted) !important;
+}
+ 
+/* Barra comparativa */
+.p-compare-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+ 
+.p-compare-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 400;
+  flex: 1;
+  min-width: 180px;
+  justify-content: center;
+}
+ 
+.p-compare-sep {
+  width: 1px;
+  height: 30px;
+  background: rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+ 
+@media (max-width: 768px) {
+  .p-compare-sep { display: none; }
+  .p-compare-item { justify-content: flex-start; }
+}
+ 
+/* Botón dorado para plan featured */
+.btn-p-custom {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--navy);
+  background: var(--gold);
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+ 
+.btn-p-custom:hover {
+  background: #f5b432;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(232,160,32,0.3);
+  color: var(--navy);
+}
