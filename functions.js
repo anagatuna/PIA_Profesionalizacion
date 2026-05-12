@@ -138,3 +138,32 @@
     goTo(0);
     startAuto();
   })();
+
+  // FORMULARIO DE CONTACTO
+  const contactForm = document.getElementById('contactForm');
+  const customAlert = document.getElementById('customAlert');
+  const closeAlertBtn = document.getElementById('closeAlertBtn');
+  
+  if (contactForm && customAlert) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault(); // Evita recargar la página
+      
+      // Mostrar la alerta con diseño
+      customAlert.classList.add('show');
+
+      // Limpiar el formulario
+      this.reset();
+    });
+
+    // Cerrar la alerta al hacer clic en el botón "Aceptar"
+    closeAlertBtn.addEventListener('click', () => {
+      customAlert.classList.remove('show');
+    });
+
+    // Cerrar la alerta si el usuario hace clic afuera de la caja modal (en el fondo oscuro)
+    customAlert.addEventListener('click', (e) => {
+      if (e.target === customAlert) {
+        customAlert.classList.remove('show');
+      }
+    });
+  }
